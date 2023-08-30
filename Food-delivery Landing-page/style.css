@@ -1,0 +1,222 @@
+*{  
+    margin : 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: antiquewhite;
+}
+/* Navigation bar */
+#navbar{
+    display : flex;
+    align-items: center;
+    position: sticky;
+  
+}
+
+/* Logo and Image */
+#logo{
+margin: 20px 30px;
+}
+
+#logo img{
+    margin: 5px 4px;
+    height: 50px;
+}
+/* List style */
+#navbar ul{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+#navbar::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+#navbar ul li a{
+    display: block;
+    color:white ;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 5px 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 650px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    background-color: black;
+    content: "";
+    position: absolute;
+    background: url('https://media.istockphoto.com/id/1397973112/photo/assortment-of-various-kinds-of-indian-cousine-on-dark-rusty-table.webp?b=1&s=170667a&w=0&k=20&c=3CyvmCw4kIQlxkKHmFEQYNyuqQYhBcyotAm1dgHmrg4=') no-repeat center center/cover ;
+    height: 115%;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index:-1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+   
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Services section */
+#services{
+    display: flex;
+    margin:30px;
+}
+#services .box{
+    border:2px solid rgb(44, 144, 153);
+    margin: 5px;
+    padding: 10px;
+    border-radius:25px ;
+    background-color: rgb(187, 197, 197);
+    -webkit-border-radius:25px ;
+    -moz-border-radius:25px ;
+    -ms-border-radius:25px ;
+    -o-border-radius:25px ;
+}
+#services .box img{
+    height:160px;
+    display: block;
+    margin:auto;
+}
+
+
+#client-section{
+position: relative;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('https://i.pinimg.com/originals/f0/b6/15/f0b615f78dd809d68ec389f4bc8d94bb.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 30px;
+}
+#clients img{
+   
+    height:120px;
+}
+
+/* Contact Section */
+
+#contact{
+    position: absolute;
+    width:100%;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.7;
+    background: url('https://media.istockphoto.com/id/1418045846/photo/email-phone-website-contact-us-website-banner-marketing.webp?b=1&s=170667a&w=0&k=20&c=Ln3XGXD1qDcQOu5igbrB7TY2_T-pOI2lGy0y-RHu87Y=')no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+#contact-box input,#contact-box textarea{
+width:100%;
+padding: 0.4rem;
+}
+#contact-box form{
+    width:50%
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* utility classes */
+.primary-h{
+    font-size: 2.8rem;
+    font-family: 'Bree Serif', serif;
+    padding: 12px;
+}
+
+.secondary-h{
+    font-size:2.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:12px;
+}
+.center{
+    text-align: center;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    border-radius: 8px;
+    color: white;
+    margin:15px;
+    font-size: 1.2rem;
+    cursor:pointer;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+
+.btn:hover{
+    color: black;
+    background-color: white;
+    box-shadow: 20px;
+    border: 4px solid black;
+}

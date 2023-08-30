@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width:904px)" href="responsive.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAAB4CAMAAACehX1qAAABg1BMVEXunab1xtDqVF/um6Typ7B8QEokUnYAAADuVWD5ydP4tKGmPkbnVF/OSlWUS1rrWGidTFeMSVh0OEK6UFy+doD4pa+PTlj/z9nZTlpVRlaWVF73V2SjhYuBWF/zvsb/uqb///+3Q0vjlqDWr7dOJhXpvsYrDRcjR2SUOUG/RE6Pk5bZkZumY2zxrrXyt75MJSl7KzJPQUNyLzMxAACvj5YAEAbCn6atN0JkLDE3DhAaCABraWqMeX2rcHheLzZoHyb27/DClJgqAAAAJjgAGSkADxN5f4K9gIlLQDIjDA9QGyAfICJFOkZ1ZmokLy9GRUeJKC9bU1eaLTYpGh4iHRa2inukeW1oS0VqQEJaPj8/MTE3GQXdpJR/XVNCGgC5gm4sDgBdPTJBKB++N0CXcHZYAhBtEBm3v78+TU1oT1SJREXZd4GCT07fPkmgGynk2tzawsLaYmvAZmyUABEPM02up6f2mTj0i0j+yxfrZVQrHAmYqKn9uCn2eVRAAAC/XEAAIiG+yaBAAAAPB0lEQVR4nO2c/1faZt/HBVyTmGT4TC1xCWqIaZOgJjCIKF+dApOAiAgWil1X2VNZ56D37ba227O7f/r9uRJQ+aLdfngSt+P7HJWjhHO9/Hy/rsDU9D9CU55/hKYe9KAHPehBf3OZ2RwK07qpQYVyelV/UbDg9Y2lJdcNLS1trE/9jUCQFTZct2hj+m+C4pnauGkFgiCGQZY2pu49BxhiyJMIMcIJokj4fDdhlqbvN4lnGAIoSti+elAuJSLCkFGWpu8vh2dqGMLl4lSZoWSK4aXYtj7sXEv31SCe9REIonTIsG6c4XGWwfnQSIy41u8jx6g/AUVEo3G3243LYA83G4v4Rp5wDw3imXaNqUQzbiScd+NunK6IY8+4ZxHiGXMokPjMNAZgMAx6UBCIsey7fq+KiGdCuSMEjbEwwBxgDeqwwumC4Bom2bhPGJOKNqEfWT7ldrMyjsuSJmkxtREKccMcTq/9WqPBbWFE+hg4Tkm8FJZIkKSlOyMhsuT06vua5FEIgzuiWZalaDIcK6Q1TTIhvuLE0cR7P/zqFgqwxn61amSj0ewxVqufPGs0jVBlHOJ+cHg80xMWZkrsPAetbh+/aCwvz7Tqp7roGi0dFvC04/lqUr0YqPRidXX1Vd04ri3PzHzbOhVuA3a+fngmhrcpH/d8dfVlrXXyzQxouV6/HWPJYYzbAsP0FeF4dfW7eqvVMjFO62PdyLUcDo87XArMEXqx+qoFcdHXHeZwTTsI4bnDpZA59P3V5yf1lgWxvFxL3I6x5GCUT+qkhtR5sfry1LJGq/Zt6HancrZt/wQFITRXPzRbJkerItzhUyDHID5pDJdPiNbrIZNjuZUYb9TvgznGZ9Yxa7gSsVrt9NjiqOt3WsOpIequymdRRNLpuUNItIn6tzPLM6d3W8OpGnh3mgKKhAy9LSn/EfEJXPv0hLvTGI7VwE8Yg+DOWNxNhyV3GUYlH+ju5ztUOz4R4ERkk8WZcCz88avIJ8wwkDNBfrdPiT+wOBWTvF7y4JNm6MuRAepun/K1GTdFx7yg2OTufMLvHPCqu32KEA9xipJkhPH9OAYhVsoTOBzwqrvzlK+E4253jEEY/zueaInE6/MJNd2BXOVBW/4ThZYpPGZxCTd9yns4tmBCV14fTKoitmN4FghREHRQJMLdVEQHtyciZzhLWqHh3RyfM7jXCjappttNMTXVDjUNIxqNZrHt/f2tra0nT55sb+9vb2PZEqzHz7hxmlRNDDoxhpF7XeaaEzjsLuTBPUwjaZpmQDTS9XcJ/s9EGiKDklUzNqj4KIYYj5dFfcL0YXOMB40Yw/C8jDDcOJLb+oGUTvj0I3PbM8UjDLYytt6SIRCTMOydZRcaVZpnzMWPC9cSvoQb/YmVoPrR5LNxp/L5iHuAEcRI92SGPkaHpXCcpdUwGT6ttbhJ9W8ihq0Zd8GfBs+/krv/1X/k1hLQiDC0rGlyOIZm8NJkjNIEDBsppqaaMfIOFUoCiaMzJgaSLkxMyyHRN75iQnAaI9gk6TuUTuiyGfLwRdeXZ1onJyV9rIdyHiNvMPi4qDdzlPlAS3Bng0ChTmdadZjD6yVuxCSAMT6C2IsRpa7iGcf7ZzEXbzKk9et0gmOuAv7HmRm0T7U8UzspXZ00QZkXhZLRCHVGMGw9s0lGBxAXb98EZ8EGF/jFm173pwFG8hpDqs1Y24bLy7XTSkJ3+QifKIiRH474FJUYPdW0M1NNJzHWojgTMl1BcuNzvfmdbq93hg8wrqzlZqTGN/WaibG83Kqdhko6V6p1ZBynXzGJykjXaGvdGGC4BT0jkb3eTlfPZNa6O/QAY+1GGWHlhMCVSvX6t60WIqkj89QgBzCPmdK57iCG/4mFQfXyK12A6Hbzwsrsir6JjIAjjGtruHGqAI4kikIk0fnutFavLddqM60fWZTJ/JURDFt7Kv9W3xpzQu+nFanX7fbWMmCUMwgS5i1906lwipGqZvlDmyMuYCmdxj+2aicsw0taszziVLZ2uP5CH+OiJ8yu9PR8d2fzX0dnZxfynJDvSelEe4CB0zSvYiGd8Fk5ClhE7vyg9k0qpm5hEWF0dLIRAjBirJVrzzL5n4BC//fZ24s3+XwGTNLrbaa5NtO3BE9r0d3L3SwWgiVfZdtIpKRKh3EuNFYTbe0M/WmEcfZGlpPSRW8nD+rlu0K3S6Jol9OJCA2NISXTpFaN7j59+vTR08u97U5C798c5hO/JsmGzhZGN7DsbXBNjPmenlk7e7O5spZJZnZ0FOr6v1eElTxlNiMMSUovs7uXgAAYSE/3sscl0yaE/geZfg0eN3pv0rqdFAiDzQvd2S6sficzCyBrvYwOOGe9TGYWOlzhBykc2/54+dTSo4Eud7EQBzYRv5Y6P0Ou+l4f7kZspUAYF2CLo0wPmSGZyWfAp7rJHdINP47cWonoNI9h8RbDNYVlEyPEiSGt8jOMJPKwOWze30GZ6l+97lGmm1kTujsr+d7Okbx5RjPsfE+icakCPV9iz+R4NEKBQC73jEos9pr65Ve2MFQ3bJ7EEQbk2p2usAIJdnaNlGUKp8y59QwaLLLic/lKH4zdMYIBSLbSPIzrv7z7ha4451NTyScs/jbT687O5Un6jMGHh3KcBwyi83z11UsDQvxyODzAGMaloVe075W37969L9yof3afjSf3WXwuuTYr4xSaMNwDiP7gwUPVJgTswyrS8w8fjo8Nw8jumdqFh0+fGj6uQJ5zYI7NGwOu3RvR0BrClARfMHu7zQ0qtFnFDKRFoOsQIuVoNvoB6fmr569edlyiIAhiCIzzaI/ziZiU/k3+/d179coctm/gJjFS0sKxAihdSMVAYVCsr1QhFK80Uuj+KZlH91DFgKcEq4VOJLKH/CoqunwVTYon3//6f9rVtond2+meYKfZ6Pj97XYywoVUYIilfnyWegYqqAhJlVlTlo+xrNdNRqwN6mNEsVsyb2Ag//gZtV5l0SFjgAKeBSTPNExyHLYfViuCKOrxgwKJfIsa2cJimCPz+NJX2kUYBmRZQjgg0woaUNL9nOvAOaxncITt2QBXEUvVtKZynbQMwU5BlMg0kNxAYagYWiuEvVnKQxZS+DD3FrfymgNpakTmHCGUqrHtLYqleFIKp9TqKzUGZfAqgTGS6Tm+0iXCwMxzAkL/6jA+hzast0QHasaIPOuCrnN6SCNjGsNrYVUNSyTApKpZdXAzMbUdEk1jGGbdaFqx4NtO5xAGq6FNUGdvbwvk/R/Pzw8wEgJZjsUknsFZ3Ov14iyjRbOSuePGY5w5VxCWMbL97txX+loxd+Xoikg47FKNajan5A7AgRgtxlO494Z4NRpGt6Yb/RgWsaemMfr3fhIR7LW5lYIfiA7fiptX+QNFeUKzOB3mcbfXS/WnV8pLAUcsq+HUVr8Z9yXMNLU3qBOEjvUuzC2IsrjgqDEWkpp0rhz853eclhjcS91MskDC8KkovWklIhchNk1jYIPWg4ic66YxtMi6ZwFezDkOP9nJlQ/f/cKQEw47KK8sV9VBWSA4yxhXRza+zm+PWRQ6++t5v6lk0CGUEH+eS//+u5umxikQB69FjcFt0B3U6j66Pn/1Yb+h9xG4q9WmJsvQl8mS2nECxBNQpfj+r+9wZhIE8pc5umpYvQYh7CGMy9BgS8fHlRX0bghVjXkpxiz9XpYuNIL2H40HC41z6f177y0UbjctpzCrg4U+BCAudzt9Y0CoxNvoPgZI0rJ1nsvLOO7d/Ji03SCB5rk62j8NieHDVs0GjBCaoQahQfg6mALFT1X5q7YFZ0ga9zJf287hyRuTYvtGdMga1rQ2p3xi6LR+0ociiMQfoYjbHQ4zQ4OjLHu9TDVoMwbUjf5yJwqsQWvZajMB3a9LDB3X6ich3SWC9GY6nJPZsHQNgYZInIWZnrYfw28ag6U/nyyKZmJRvlpIpzqdzvYrDDveDsGjjpqWpPM2q8WukwHOS9YbVSSsbTOEJ9CEHIWzc7OT9PkchZOUmmXQ6Th5tPXcHM1fvHi5vR8mtegzJhxlrnpgSjXO4+dY1MgaebtT1ULyEDyBmfv88f9M0Bw0uKRsqAzOqFvJnerJd6t9fdeEbovRyrEBBctXDyqJnFJBWw/2YzSgmWKpuclCjkJJqMvFKb4RP/7mSs1qDAapZHmQHnD+uBqPBwMlJZc1jIbdiSqo8ug0n7+SPFD/gJyUq1ne3CzBKZq/fiZNHzbzAcyaR3BKy6qxco6b9iSUcrOI2UyxkMyi26k+Zk1hUfQNw7IYeMbx9vY+0hMM2zJVuKGtrf1QMrDQLlAoOeF04aMRJpu5XGIhr+SKi5jdicrcVcjDsnNKKa4olUpOUbhyDjCifk8AtLEhLKH8KljaCSLB79FmhKdRYGBuJ9UDf6KSJtWKkoufxwEjm7cZw0Txw6rjSn5HiZeNsqLkKgqKUz9ycPODLBbQp1tMw8Knhj9DYSGJ7RfUKnaucAGlvJWFF2nnS4pjGNliMacEp5VypQwY00mlXCwa/psrnvw+GbCIP2s0y0o7ADFhlOF/EUgga9he/dBi2kaxGI/np5RcGVby84IfYWSTf+ZaTx4rFpsKl2+DQ8EsHMgrcYiNwP/3midoIZ9dXKwo7SDEBSjgiccXFxeNP/cfDTQBowKBBZGl5PKBnGIsFpvOzE5YcbGYy1Xi3E4kFw+0c5XFxWLjT17bMeDiuHIeCe5w8XZCqRQXjbYzGH4wB+IIBqba8TJKmYvZ9p+sxHkDTBeKK4l8MAl5DigWm/bPTUieYLWIOJR4rgT9BKIoNq1cfLtQfKM8BnkOcQAB+GSuDNdi9k9NlqByoKXDUlDtQA+zP66BvgQ9HhL6zZdrpubn83lUQ4JNuABULpfNR4bfdgqPJxAMzs+vzTeyaAVFJPQzm/rsE/rihqoWh6miYXeTPuWZX3v82FrRZ8+iRvFqJdEvPkUxrObVtYaRmrc7MPKI4GotahVIik0je6z+NQjrYsM4MKpVFV7Q9hIeCM5/+bjvGWCVVEp9ojZSf9EUpr6Ai1Op2Gdr80H7Sx9kGpRzgAbiYxDR/WV9SuhZ8NzHVsjDCwTN4ytnP01swcwuZk8bCAT7mr9Fg78HzWd7rq9/0IMe9KAHPehBD/ob67+u4fV0XT1L2wAAAABJRU5ErkJggg=="
+                alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services">Services</a></li>
+            <li class="item"><a href="#clients">Clients </a></li>
+            <li class="item"><a href="#contact">Contact</a></li>
+            <li class="item"><a href="#">More</a></li>
+        </ul>
+    </nav>
+
+    <!-- section -->
+    <section id="home">
+        <h1 class="primary-h"> Fill your feelings</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi adipisci aperiam velit assumenda nam
+            explicabo pariatur quia illo. Ex, itaque? Placeat esse magnam voluptatibus ut, doloremque reprehenderit
+            fugit quae!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore animi adipisci aperiam velit assumenda nam
+            explicabo pariatur quia illo.!</p>
+        <button class="btn">Order Now</button>
+    </section>
+
+    <section class="services-container">
+        <h1 class="primary-h center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://c4.wallpaperflare.com/wallpaper/234/543/684/food-pizza-wallpaper-preview.jpg"
+                    alt="please wait">
+                <h2 class="secondary-h center">PizzaMania</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div>
+            <div class="box">
+                <img src="https://images5.alphacoders.com/415/415257.jpg" alt="please wait">
+                <h2 class="secondary-h center">Burger</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.dfordelhi.in/wp-content/uploads/2016/10/Indian-Food-Samosa-Dish-HD-Wallpapers.jpg"
+                    alt="please wait">
+                <h2 class="secondary-h center">Samosaa</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div>
+            <!-- <div class="box">
+                <img src="https://wallpapercave.com/wp/wp3108352.jpg"
+                    alt="please wait">
+                <h2 class="secondary-h center">Chicken</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div> -->
+            <!-- <div class="box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0ZVqfvcmqxK3EYarr78bqOwxCnO4hFzMHJQ&usqp=CAU"
+                    alt="please wait">
+                <h2 class="secondary-h center">Barbeque</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div>
+            <div class="box">
+                <img src="https://images6.alphacoders.com/439/439410.jpg"
+                    alt="please wait">
+                <h2 class="secondary-h center">Wings</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, perferendis ex fuga
+                    veniam culpa sunt saepe dignissimos. Corrupti incidunt fugit cumque amet autem ipsam, harum quasi
+                    dolorem. Eaque, adipisci veritatis.</p>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section id="client-section">
+        <h1 class="primary-h center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://s3.amazonaws.com/cdn.designcrowd.com/blog/100-Famous-Brand%20Logos-From-The-Most-Valuable-Companies-of-2020/apple-logo.png"
+                    alt="Our valuable clients">
+            </div>
+            <div class="client-item">
+                <img src="https://www.aabhishek.com/wp-content/uploads/2020/01/Visa-Company-Logo-Oci-Visa-Center-Logo-Logo-Design-company-USA-London-India-Dubai.jpg"
+                    alt="Our valuable clients">
+            </div>
+            <div class="client-item">
+                <img src="https://marketplace.canva.com/EAFCh_1S8lw/2/0/1600w/canva-gold-and-black-luxury-estate-agency-logo-j2DDupyCyWw.jpg"
+                    alt="Our valuable clients">
+            </div>
+            <div class="client-item">
+                <img src="https://cdn.kickcharge.com/wp-content/uploads/2018/04/24093540/airprofessionals-logo-1024x625.jpg"
+                    alt="Our valuable clients">
+            </div>
+            <!-- <div class="client-item">
+                <img src="https://marketplace.canva.com/EAE9aNauFmI/1/0/1600w/canva-black-white-modern-monogram-handwritten-real-estate-logo-TMZIWYq2kMs.jpg" alt="Our valuable clients">
+            </div> -->
+            <!-- <div class="client-item">
+                <img src="https://cdn.logojoy.com/wp-content/uploads/2018/05/01104846/1952-768x591.png" alt="Our valuable clients">
+            </div> -->
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+        <h1 class="primary-h center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="text" id="email" placeholder="Enter Your email">
+                </div>
+                <div class="form-group">
+                    <label for="name">Phone Number:</label>
+                    <input type="text" id="phone" placeholder="Enter Your phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message:</label>
+                    <input type="text" id="message" placeholder="Enter Your message">
+                </div>
+                <div class="form-group">
+                    <label for="name">Address:</label>
+                    <input type="text" id="address" placeholder="Enter Your address">
+                </div>
+            </form>
+            <button class="btn">Submit</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
